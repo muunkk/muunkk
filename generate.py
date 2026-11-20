@@ -6,10 +6,10 @@ Edit LOGO or INFO below, then run:  python3 generate.py
 from html import escape
 
 # Dracula+ palette (matches the Ghostty theme)
-BG = "#212121"
-BAR = "#2b2b2b"
-FG = "#f8f8f2"
-DIM = "#7a7f99"
+BG = "#1f1c1b"  # warm near-black
+BAR = "#2b2624"
+FG = "#f6efe6"
+DIM = "#8a7d74"
 PINK = "#ff79c6"
 PURPLE = "#bd93f9"
 CYAN = "#8be9fd"
@@ -40,8 +40,8 @@ def gradient(stops, n):
     return out
 
 
-# yellow at the top fading to red at the bottom
-LOGO_COLORS = gradient([YELLOW, ORANGE, RED], len(LOGO))
+# yellow at the top fading to red at the bottom (red repeated so the lower rows land on red)
+LOGO_COLORS = gradient([YELLOW, ORANGE, RED, RED], len(LOGO))
 TITLE_COLOR = YELLOW  # mel@muunkk
 KEY_COLOR = ORANGE  # Location, Packages, ...
 
@@ -94,7 +94,7 @@ for i, c in enumerate(["#ff5f57", "#febc2e", "#28c840"]):
 w(f'<text x="{width/2}" y="23" fill="{DIM}" text-anchor="middle" style="font-size:12px">mel — fastfetch — 120×30</text>')
 
 # Prompt line
-w(f'<text x="{PAD_X}" y="{TOP - 8}"><tspan fill="{GREEN}">➜</tspan>  <tspan fill="{CYAN}">~</tspan> <tspan fill="{FG}">fastfetch</tspan></text>')
+w(f'<text x="{PAD_X}" y="{TOP - 8}"><tspan fill="{RED}">➜</tspan>  <tspan fill="{YELLOW}">~</tspan> <tspan fill="{FG}">fastfetch</tspan></text>')
 
 # Logo, vertically centered against the info block
 body_top = TOP + 18
@@ -114,7 +114,7 @@ for i, (key, val) in enumerate(INFO):
             w(f'<text x="{info_x:.1f}" y="{y}" fill="{DIM}">{"-" * len(title)}</text>')
         elif val == "colors":
             sw = CHAR_W * 3
-            for j, c in enumerate(["#44475a", RED, GREEN, YELLOW, PURPLE, PINK, CYAN, FG]):
+            for j, c in enumerate(gradient([YELLOW, ORANGE, RED, "#c43c3c"], 8)):
                 w(f'<rect x="{info_x + j*sw:.1f}" y="{y - FONT + 2}" width="{sw:.1f}" height="{LINE - 2}" fill="{c}"/>')
         continue
     w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{KEY_COLOR}" font-weight="bold">{escape(key)}</tspan>'
@@ -122,8 +122,8 @@ for i, (key, val) in enumerate(INFO):
 
 # fresh prompt with a blinking cursor
 py = body_top + (len(INFO) + 0.6) * LINE
-w(f'<text x="{PAD_X}" y="{py:.1f}"><tspan fill="{GREEN}">➜</tspan>  <tspan fill="{CYAN}">~</tspan> </text>')
-w(f'<rect class="cursor" x="{PAD_X + 5*CHAR_W:.1f}" y="{py - FONT + 2:.1f}" width="{CHAR_W:.1f}" height="{FONT + 3}" fill="{FG}"/>')
+w(f'<text x="{PAD_X}" y="{py:.1f}"><tspan fill="{RED}">➜</tspan>  <tspan fill="{YELLOW}">~</tspan> </text>')
+w(f'<rect class="cursor" x="{PAD_X + 5*CHAR_W:.1f}" y="{py - FONT + 2:.1f}" width="{CHAR_W:.1f}" height="{FONT + 3}" fill="{ORANGE}"/>')
 
 w("</svg>")
 
