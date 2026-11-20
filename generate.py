@@ -32,7 +32,7 @@ LOGO_COLORS = [PINK, PINK, PURPLE, PURPLE, CYAN, CYAN]
 INFO = [
     (None, "title"),
     (None, "sep"),
-    ("Location", "New York City"),
+    ("Location", "New York City, Bangkok, Shanghai"),
     ("Packages", "tutornet, vector, munk, subtrakt, workingset"),
     ("Font", "MesloLGS NF 16pt"),
     ("Theme", "Dracula+"),

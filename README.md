@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./fetch.svg" alt="mel@muunkk. Location: New York City. Packages: tutornet, vector, munk, subtrakt, workingset. Font: MesloLGS NF 16pt. Theme: Dracula+. Contact: x.com/melboonchan, melboonchan.com." width="100%">
+  <img src="./fetch.svg" alt="mel@muunkk. Location: New York City, Bangkok, Shanghai. Packages: tutornet, vector, munk, subtrakt, workingset. Font: MesloLGS NF 16pt. Theme: Dracula+. Contact: x.com/melboonchan, melboonchan.com." width="100%">
 </p>
 
 <p align="center">
