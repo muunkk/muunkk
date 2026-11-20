@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./fetch.svg" alt="mel@muunkk: Mel Boonchan, New York City. Student who keeps shipping things. Building Tutornet, Vector, Munk, Subtrakt and WorkingSet. Swift, TypeScript, Kotlin, Rust." width="100%">
+  <img src="./fetch.svg" alt="mel@muunkk. Location: New York City. Packages: tutornet, vector, munk, subtrakt, workingset. Font: MesloLGS NF 16pt. Theme: Dracula+. Contact: x.com/melboonchan, melboonchan.com." width="100%">
 </p>
 
 <p align="center">
