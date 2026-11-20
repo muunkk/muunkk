@@ -40,8 +40,8 @@ def gradient(stops, n):
     return out
 
 
-# yellow at the top fading to red at the bottom (red repeated so the lower rows land on red)
-LOGO_COLORS = gradient([YELLOW, ORANGE, RED, RED], len(LOGO))
+# yellow at the top fading to red at the bottom
+LOGO_COLORS = gradient([YELLOW, ORANGE, RED], len(LOGO))
 TITLE_COLOR = YELLOW  # mel@muunkk
 KEY_COLOR = ORANGE  # Location, Packages, ...
 
@@ -114,7 +114,7 @@ for i, (key, val) in enumerate(INFO):
             w(f'<text x="{info_x:.1f}" y="{y}" fill="{DIM}">{"-" * len(title)}</text>')
         elif val == "colors":
             sw = CHAR_W * 3
-            for j, c in enumerate(gradient([YELLOW, ORANGE, RED, "#c43c3c"], 8)):
+            for j, c in enumerate(["#44475a", RED, GREEN, YELLOW, PURPLE, PINK, CYAN, FG]):
                 w(f'<rect x="{info_x + j*sw:.1f}" y="{y - FONT + 2}" width="{sw:.1f}" height="{LINE - 2}" fill="{c}"/>')
         continue
     w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{KEY_COLOR}" font-weight="bold">{escape(key)}</tspan>'
