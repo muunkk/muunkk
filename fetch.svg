@@ -12,19 +12,19 @@
 <circle cx="62" cy="18" r="6" fill="#28c840"/>
 <text x="438.5" y="23" fill="#7a7f99" text-anchor="middle" style="font-size:12px">mel — fastfetch — 120×30</text>
 <text x="28" y="56"><tspan fill="#50fa7b">➜</tspan>  <tspan fill="#8be9fd">~</tspan> <tspan fill="#f8f8f2">fastfetch</tspan></text>
-<text x="28" y="103.0" fill="#ff79c6" style="font-size:18px">███╗   ███╗███████╗██╗     </text>
-<text x="28" y="124.0" fill="#ff79c6" style="font-size:18px">████╗ ████║██╔════╝██║     </text>
-<text x="28" y="145.0" fill="#bd93f9" style="font-size:18px">██╔████╔██║█████╗  ██║     </text>
-<text x="28" y="166.0" fill="#bd93f9" style="font-size:18px">██║╚██╔╝██║██╔══╝  ██║     </text>
-<text x="28" y="187.0" fill="#8be9fd" style="font-size:18px">██║ ╚═╝ ██║███████╗███████╗</text>
-<text x="28" y="208.0" fill="#8be9fd" style="font-size:18px">╚═╝     ╚═╝╚══════╝╚══════╝</text>
-<text x="355.6" y="82"><tspan fill="#ff79c6" font-weight="bold">mel</tspan><tspan fill="#f8f8f2">@</tspan><tspan fill="#ff79c6" font-weight="bold">muunkk</tspan></text>
+<text x="28" y="103.0" fill="#f1fa8c" style="font-size:18px">███╗   ███╗███████╗██╗     </text>
+<text x="28" y="124.0" fill="#f7e07f" style="font-size:18px">████╗ ████║██╔════╝██║     </text>
+<text x="28" y="145.0" fill="#fcc572" style="font-size:18px">██╔████╔██║█████╗  ██║     </text>
+<text x="28" y="166.0" fill="#ffa467" style="font-size:18px">██║╚██╔╝██║██╔══╝  ██║     </text>
+<text x="28" y="187.0" fill="#ff7d5e" style="font-size:18px">██║ ╚═╝ ██║███████╗███████╗</text>
+<text x="28" y="208.0" fill="#ff5555" style="font-size:18px">╚═╝     ╚═╝╚══════╝╚══════╝</text>
+<text x="355.6" y="82"><tspan fill="#f1fa8c" font-weight="bold">mel</tspan><tspan fill="#f8f8f2">@</tspan><tspan fill="#f1fa8c" font-weight="bold">muunkk</tspan></text>
 <text x="355.6" y="103" fill="#7a7f99">----------</text>
-<text x="355.6" y="124"><tspan fill="#bd93f9" font-weight="bold">Location</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">New York City, Bangkok, Shanghai</tspan></text>
-<text x="355.6" y="145"><tspan fill="#bd93f9" font-weight="bold">Packages</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">tutornet, vector, munk, subtrakt, workingset</tspan></text>
-<text x="355.6" y="166"><tspan fill="#bd93f9" font-weight="bold">Theme</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">Dracula+</tspan></text>
-<text x="355.6" y="187"><tspan fill="#bd93f9" font-weight="bold">Font</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">MesloLGS NF 16pt</tspan></text>
-<text x="355.6" y="208"><tspan fill="#bd93f9" font-weight="bold">Contact</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">x.com/melboonchan · melboonchan.com</tspan></text>
+<text x="355.6" y="124"><tspan fill="#ffb86c" font-weight="bold">Location</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">New York City, Bangkok, Shanghai</tspan></text>
+<text x="355.6" y="145"><tspan fill="#ffb86c" font-weight="bold">Packages</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">tutornet, vector, munk, subtrakt, workingset</tspan></text>
+<text x="355.6" y="166"><tspan fill="#ffb86c" font-weight="bold">Theme</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">Dracula+</tspan></text>
+<text x="355.6" y="187"><tspan fill="#ffb86c" font-weight="bold">Font</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">MesloLGS NF 16pt</tspan></text>
+<text x="355.6" y="208"><tspan fill="#ffb86c" font-weight="bold">Contact</tspan><tspan fill="#7a7f99">: </tspan><tspan fill="#f8f8f2">x.com/melboonchan · melboonchan.com</tspan></text>
 <rect x="355.6" y="237" width="27.0" height="19" fill="#44475a"/>
 <rect x="382.6" y="237" width="27.0" height="19" fill="#ff5555"/>
 <rect x="409.6" y="237" width="27.0" height="19" fill="#50fa7b"/>

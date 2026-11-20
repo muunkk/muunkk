@@ -26,7 +26,24 @@ LOGO = [
     "██║ ╚═╝ ██║███████╗███████╗",
     "╚═╝     ╚═╝╚══════╝╚══════╝",
 ]
-LOGO_COLORS = [PINK, PINK, PURPLE, PURPLE, CYAN, CYAN]
+
+
+def gradient(stops, n):
+    """n colors fading evenly through the given hex stops."""
+    rgb = [[int(c[i:i + 2], 16) for i in (1, 3, 5)] for c in stops]
+    out = []
+    for t in range(n):
+        p = t / (n - 1) * (len(stops) - 1)
+        i = min(int(p), len(stops) - 2)
+        f = p - i
+        out.append("#%02x%02x%02x" % tuple(round(a + (b - a) * f) for a, b in zip(rgb[i], rgb[i + 1])))
+    return out
+
+
+# yellow at the top fading to red at the bottom
+LOGO_COLORS = gradient([YELLOW, ORANGE, RED], len(LOGO))
+TITLE_COLOR = YELLOW  # mel@muunkk
+KEY_COLOR = ORANGE  # Location, Packages, ...
 
 # (key, value). key=None means a raw line (title / separator / blank).
 INFO = [
@@ -92,7 +109,7 @@ for i, (key, val) in enumerate(INFO):
     y = body_top + i * LINE
     if key is None:
         if val == "title":
-            w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{PINK}" font-weight="bold">{USER}</tspan><tspan fill="{FG}">@</tspan><tspan fill="{PINK}" font-weight="bold">{HOST}</tspan></text>')
+            w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{TITLE_COLOR}" font-weight="bold">{USER}</tspan><tspan fill="{FG}">@</tspan><tspan fill="{TITLE_COLOR}" font-weight="bold">{HOST}</tspan></text>')
         elif val == "sep":
             w(f'<text x="{info_x:.1f}" y="{y}" fill="{DIM}">{"-" * len(title)}</text>')
         elif val == "colors":
@@ -100,7 +117,7 @@ for i, (key, val) in enumerate(INFO):
             for j, c in enumerate(["#44475a", RED, GREEN, YELLOW, PURPLE, PINK, CYAN, FG]):
                 w(f'<rect x="{info_x + j*sw:.1f}" y="{y - FONT + 2}" width="{sw:.1f}" height="{LINE - 2}" fill="{c}"/>')
         continue
-    w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{PURPLE}" font-weight="bold">{escape(key)}</tspan>'
+    w(f'<text x="{info_x:.1f}" y="{y}"><tspan fill="{KEY_COLOR}" font-weight="bold">{escape(key)}</tspan>'
       f'<tspan fill="{DIM}">: </tspan><tspan fill="{FG}">{escape(val)}</tspan></text>')
 
 # fresh prompt with a blinking cursor
